@@ -1,0 +1,68 @@
+.header {
+  @include media-breakpoint-up(lg) {
+    background: url(../../../public/images/banners/banner.png) center center /
+      cover no-repeat;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &-connect {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  &-controls {
+    font-size: 18px;
+    color: $white;
+  }
+
+  &-primary {
+    background-color: $brand-primary;
+  }
+
+  form {
+    position: relative;
+  }
+
+  &-search {
+    border: 1px solid white;
+    width: 254px;
+    display: flex;
+    justify-content: flex-end;
+
+    @include media-breakpoint-up(md) {
+      border: 1px solid $black;
+      &::placeholder {
+        position: relative;
+        left: 34px;
+      }
+    }
+  }
+
+  &-menu {
+    color: white;
+    font-size: 32px;
+  }
+
+  &-search {
+    color: $white;
+    position: absolute;
+    z-index: 1;
+
+    @include media-breakpoint-up(md) {
+      color: $black;
+    }
+  }
+
+  .header-bottom {
+    color: $white;
+    bottom: 0;
+    background-color: $brand-primary;
+    text-transform: uppercase;
+    width: 100%;
+  }
+}
