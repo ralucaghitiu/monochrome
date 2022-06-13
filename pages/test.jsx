@@ -29,7 +29,7 @@ export default function Test() {
 
       <div>
         <a className="badge badge-wishlist" href="" title="user-wishlist">
-          <i class="fa-solid fa-heart"></i>
+          <i className="fa-solid fa-heart"></i>
         </a>
       </div>
     </div>
