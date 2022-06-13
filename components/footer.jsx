@@ -120,7 +120,7 @@ export default function Footer() {
 
         <section className="footer-connect">
           <section className="footer-newsletter">
-            <h1 className="d-block d-lg-none">Let's connect</h1>
+            <h1 className="d-block d-lg-none">Let s connect</h1>
             <p className="d-block d-lg-none">
               Be the first to receive exclusives offers
             </p>
