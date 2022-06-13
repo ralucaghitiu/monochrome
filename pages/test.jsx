@@ -26,6 +26,12 @@ export default function Test() {
 
         <span className="badge badge-secondary badge-font-large">-5%</span>
       </div>
+
+      <div>
+        <a className="badge badge-wishlist" href="" title="user-wishlist">
+          <i class="fa-solid fa-heart"></i>
+        </a>
+      </div>
     </div>
   );
 }

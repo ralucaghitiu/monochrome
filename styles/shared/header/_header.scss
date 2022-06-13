@@ -1,68 +1,146 @@
 .header {
-  @include media-breakpoint-up(lg) {
-    background: url(../../../public/images/banners/banner.png) center center /
-      cover no-repeat;
-    height: 500px;
-    position: relative;
+  &-secondary {
+    background: $white;
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include media-breakpoint-up(lg) {
+      background: url(/images/banners/banner.png) center center / cover
+        no-repeat;
+      width: 100%;
+      height: 497px;
+    }
+  }
+
+  &-site-controls {
+    ul {
+      display: flex;
+      gap: 20px;
+
+      li {
+        font-size: 22px;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-right: 130px;
+      display: inline-block;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        font-size: 22px;
+        gap: 30px;
+        padding-top: 14px;
+
+        .search {
+          border: none;
+          background: none;
+        }
+
+        .searchsubmit {
+          background-color: $white;
+          border: 1px solid $gray-secondary;
+
+          i {
+            color: brand-primary;
+          }
+        }
+
+        #search {
+          border: 1px solid $gray-secondary;
+        }
+      }
+    }
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: 'Baskerville Old Face';
+  font-size: 19px;
+  font-weight: 600;
+}
+
+@include media-breakpoint-up(lg) {
+  .header-connect {
+    padding-left: 130px;
+    display: inline-block;
+    padding-top: 14px;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      font-size: 18px;
+      gap: 30px;
+
+      li {
+        color: $white;
+        font-family: 'Playfair Display';
+      }
+    }
+  }
+}
+
+.header-primary {
+  background-color: $brand-primary;
+
+  &-menu {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-  }
+    height: 50px;
 
-  &-connect {
-    color: $white;
-    text-transform: uppercase;
-    font-size: 16px;
-  }
+    .menu-bars {
+      color: $white;
+      font-size: 32px;
 
-  &-controls {
-    font-size: 18px;
-    color: $white;
-  }
+      margin-right: 50px;
+    }
 
-  &-primary {
-    background-color: $brand-primary;
-  }
+    .header-primary-search {
+      display: flex;
+      width: 100%;
+      color: $gray-secondary;
+      justify-content: space-between;
+      border: 1px solid $gray-secondary;
+      flex-grow: 1;
 
-  form {
-    position: relative;
-  }
+      .header-search {
+        border: none;
+        background-color: $brand-primary;
 
-  &-search {
-    border: 1px solid white;
-    width: 254px;
-    display: flex;
-    justify-content: flex-end;
+        i {
+          color: $brand-secondary;
+          font-size: 12px;
+        }
+      }
 
-    @include media-breakpoint-up(md) {
-      border: 1px solid $black;
-      &::placeholder {
-        position: relative;
-        left: 34px;
+      #header-search {
+        border: none;
+        color: $white;
+        background-color: $brand-primary;
       }
     }
   }
 
-  &-menu {
-    color: white;
-    font-size: 32px;
-  }
+  .nav-primary {
+    padding: 12px 0;
 
-  &-search {
-    color: $white;
-    position: absolute;
-    z-index: 1;
+    a {
+      color: $brand-secondary;
+      text-transform: uppercase;
+      font-family: 'Playfair Display';
+      font-size: 19px;
+      font-weight: 300;
+      transition: font-weight 0.2s linear;
 
-    @include media-breakpoint-up(md) {
-      color: $black;
+      &:hover {
+        font-weight: 500;
+      }
     }
-  }
-
-  .header-bottom {
-    color: $white;
-    bottom: 0;
-    background-color: $brand-primary;
-    text-transform: uppercase;
-    width: 100%;
   }
 }

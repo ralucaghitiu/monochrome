@@ -1,3 +1,117 @@
 .footer {
   background-color: $brand-secondary;
+
+  .container {
+    width: 100%;
+    padding: 0px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 22px;
+    color: $brand-primary;
+    font-family: 'Playfair Display';
+    font-weight: 500px;
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      line-height: 30px;
+    }
+
+    .footer-connect {
+      text-align: center;
+
+      label {
+        font-size: 15px;
+      }
+    }
+
+    form {
+      #email {
+        font-size: 12px;
+        width: 60%;
+
+        @include media-breakpoint-up(lg) {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+
+      .footer-social {
+        ul {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+
+          @include media-breakpoint-up(lg) {
+            justify-content: flex-start;
+          }
+        }
+
+        li {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .footer-nav {
+      background-color: $gray-primary;
+      color: $white;
+      text-align: center;
+
+      @include media-breakpoint-up(lg) {
+        background-color: $brand-secondary;
+        color: $brand-primary;
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+
+        @include media-breakpoint-up(lg) {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        ul {
+          line-height: 30px;
+
+          @include media-breakpoint-up(lg) {
+            line-height: 35px;
+            text-align: left;
+          }
+
+          li {
+            font-size: 16px;
+
+            @include media-breakpoint-up(lg) {
+              font-size: 22px;
+            }
+          }
+        }
+
+        ul:nth-of-type(1) {
+          padding-left: 50px;
+
+          @include media-breakpoint-up(lg) {
+            padding-left: 0px;
+            padding-right: 100px;
+          }
+        }
+
+        ul:nth-of-type(2) {
+          @include media-breakpoint-up(lg) {
+            padding-left: 100px;
+          }
+        }
+      }
+    }
+  }
 }

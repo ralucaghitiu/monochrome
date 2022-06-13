@@ -1,116 +1,112 @@
 export default function Header() {
   return (
     <header className="header">
-      <section className="header-secondary container d-flex align-items-center px-3 px-md-5">
-        <h1 className="title d-block d-md-none">Monochrome</h1>
-        <div className="header-connect d-none d-md-block mt-4 px-0 px-lg-5">
-          <ul className="d-flex align-items-center gap-3">
-            <li>
-              <a
-                href=""
-                title="Youtube"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-youtube"></i>
-              </a>
-            </li>
+      <section className="header-secondary">
+        <section className="header-secondary-inner container">
+          <div className="header-connect d-none d-lg-block mt-3">
+            <ul>
+              <li>
+                <a href="" title="YouTube">
+                  <i className="fa-brands fa-youtube"></i>
+                </a>
+              </li>
 
-            <li>
-              <a
-                href=""
-                title="Twitter"
-                target="_blank"
-                rel="noopener noreferre"
-              >
-                <i className="fa-brands fa-twitter"></i>
-              </a>
-            </li>
+              <li>
+                <a href="" title="Twitter">
+                  <i className="fa-brands fa-twitter"></i>
+                </a>
+              </li>
 
-            <li>
-              <a
-                href=""
-                title="Facebook"
-                target="_blank"
-                rel="noopener noreferre"
-              >
-                <i className="fa-brands fa-facebook"></i>
-              </a>
-            </li>
+              <li>
+                <a href="" title="Facebook">
+                  <i className="fa-brands fa-facebook"></i>
+                </a>
+              </li>
 
-            <li>
-              <a
-                href=""
-                title="Instagram"
-                target="_blank"
-                rel="noopener noreferre"
-              >
-                <i className="fa-brands fa-instagram"></i>
-              </a>
-            </li>
+              <li>
+                <a href="" title="Instagram">
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
+              </li>
 
-            <li>
-              <a href="tel:+44 (0)10 2345 6789" title="Call us">
-                CALL US +44 (0)10 2345 6789
-              </a>
-            </li>
-          </ul>
-        </div>
+              <li>
+                <a href="tel:+44 (0)10 2345 6789" title="Call us">
+                  CALL US +44 (0)10 2345 6789
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <section className="header-controls px-lg-5 d-flex gap-3 mt-0 mt-md-4">
-          <ul className="d-flex justify-content-between">
-            <li className="header-search">
-              <form className="d-none d-md-block" action="/">
-                <button type="submit" title="Search">
-                  <i className="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <input type="text" placeholder="search"></input>
-              </form>
-            </li>
+          <div className="title d-block d-lg-none mt-4 mb-3">
+            <h1>Monochrome</h1>
+          </div>
 
-            <li>
-              <a href="" title="user-account">
-                <i class="fa-solid fa-user"></i>
-              </a>
-            </li>
+          <div className="header-site-controls mt-3">
+            <ul>
+              <li>
+                <form className="d-none d-lg-block" action="/">
+                  <button type="submit" title="Search" className="searchsubmit">
+                    <i className="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <input
+                    type="text"
+                    placeholder="search"
+                    title="search"
+                    id="search"
+                  ></input>
+                </form>
+              </li>
 
-            <li>
-              <a href="" title="user-wishlist">
-                <i class="fa-solid fa-heart"></i>
-              </a>
-            </li>
+              <li>
+                <a href="" title="User">
+                  <i className="fa-solid fa-user"></i>
+                </a>
+              </li>
 
-            <li className="pe-0 pe-xl-5">
-              <a href="" title="shopping bag">
-                <i class="fa-solid fa-bag-shopping"></i>
-              </a>
-            </li>
-          </ul>
+              <li>
+                <a href="" title="Wishlist">
+                  <i className="fa-solid fa-heart"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="" title="shopping bag">
+                  <i className="fa-solid fa-bag-shopping"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
       </section>
 
       <section className="header-primary">
-        <div className="header-menu container d-flex d-lg-none justify-content-between align-items-center px-4 py-4">
-          <ul className="d-flex">
-            <li>
+        <div className="header-primary-menu container">
+          <section className="header-primary-mobile d-lg-none">
+            <div className="menu-bars">
               <a href="" title="Menu">
-                <i class="fa-solid fa-bars"></i>
+                <i className="fa-solid fa-bars"></i>
               </a>
-            </li>
-          </ul>
+            </div>
 
-          <form action="">
-            <i class="header-search fa-solid fa-magnifying-glass"></i>
-            <input className="header-search" type="text" placeholder="search" />
-          </form>
-        </div>
+            <form action="" className="header-primary-search">
+              <input
+                type="text"
+                name="header-search"
+                id="header-search"
+                title="header-search"
+                placeholder="search"
+              />
+              <button type="submit" className="header-search">
+                <i className="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </section>
 
-        <div className="header-bottom d-none d-md-block">
-          <nav className="container">
-            <ul className="d-flex justify-content-between align-items-center">
+          <nav className="nav-primary container d-none d-lg-block">
+            <ul className="d-flex justify-content-between">
               <li>
-                <a href="" title="New arrivals">
-                  New arrivals
+                <a href="" title="New Arrivals">
+                  New Arrivals
                 </a>
               </li>
 
@@ -122,13 +118,13 @@ export default function Header() {
 
               <li>
                 <a href="" title="Men's">
-                  Men's
+                  Mens
                 </a>
               </li>
 
               <li>
                 <a href="" title="Women's">
-                  Women's
+                  Womens
                 </a>
               </li>
 
@@ -145,13 +141,6 @@ export default function Header() {
               </li>
             </ul>
           </nav>
-        </div>
-      </section>
-
-      <section className="banner-mobile d-lg-none">
-        <div>
-          <img src="/images/banners/banner-mobile.png" alt="Banner" />
-          <button className="new-in btn">New in</button>
         </div>
       </section>
     </header>
