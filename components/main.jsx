@@ -16,7 +16,7 @@ export default function Main() {
           <h1 className="d-none d-lg-block">New Stuff</h1>
         </header>
 
-        <section className="product-tiles">
+        <section className="product-tiles d-flex justify-content-between">
           <article className="product-tile">
             <header className="product-tile-header">
               <div className="produtct-tile-image">
@@ -147,7 +147,7 @@ export default function Main() {
         </section>
       </section>
 
-      <section className="home-catalog-preview container demo-flex">
+      <section className="home-catalog-preview container  demo-flex">
         <hr />
         <header>
           <h1 className="d-none d-lg-block">
@@ -430,7 +430,7 @@ export default function Main() {
         </footer>
       </section>
 
-      <section className="home-catalog-preview container demo-flex">
+      <section className="home-catalog-preview container  demo-flex">
         <header>
           <h1 className="section-title">
             <span>Woman s</span>
