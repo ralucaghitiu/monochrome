@@ -16,10 +16,10 @@ export default function Main() {
           <h1 className="d-none d-lg-block">New Stuff</h1>
         </header>
 
-        <section className="product-tiles d-flex justify-content-between">
+        <section className="product-tiles">
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/NS01.png" alt="product01" />
               </div>
 
@@ -36,7 +36,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -51,7 +51,7 @@ export default function Main() {
 
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/NS02.png" alt="product02" />
               </div>
 
@@ -68,7 +68,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -83,7 +83,7 @@ export default function Main() {
 
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/NS03.png" alt="product01" />
               </div>
 
@@ -100,7 +100,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -115,7 +115,7 @@ export default function Main() {
 
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/NS04.png" alt="product01" />
               </div>
 
@@ -132,7 +132,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -147,7 +147,7 @@ export default function Main() {
         </section>
       </section>
 
-      <section className="home-catalog-preview container  demo-flex">
+      <section className="home-catalog-preview container demo-flex">
         <hr />
         <header>
           <h1 className="d-none d-lg-block">
@@ -159,7 +159,7 @@ export default function Main() {
         <section className="product-tiles">
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/ML01.png" alt="product01" />
               </div>
 
@@ -176,7 +176,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -191,7 +191,7 @@ export default function Main() {
 
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/ML02.png" alt="product01" />
               </div>
 
@@ -208,7 +208,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -222,7 +222,7 @@ export default function Main() {
           </article>
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/ML03.png" alt="product01" />
               </div>
 
@@ -239,7 +239,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -253,7 +253,7 @@ export default function Main() {
           </article>
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/ML04.png" alt="product01" />
               </div>
 
@@ -270,7 +270,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -297,7 +297,7 @@ export default function Main() {
         <section className="product-tiles">
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/MNS01.png" alt="product01" />
               </div>
 
@@ -314,7 +314,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -329,7 +329,7 @@ export default function Main() {
 
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/MNS02.png" alt="product02" />
               </div>
 
@@ -346,7 +346,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -361,7 +361,7 @@ export default function Main() {
 
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/MNS03.png" alt="product03" />
               </div>
 
@@ -378,7 +378,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -393,7 +393,7 @@ export default function Main() {
 
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/MNS04.png" alt="product04" />
               </div>
 
@@ -410,7 +410,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -430,7 +430,7 @@ export default function Main() {
         </footer>
       </section>
 
-      <section className="home-catalog-preview container  demo-flex">
+      <section className="home-catalog-preview container demo-flex">
         <header>
           <h1 className="section-title">
             <span>Woman s</span>
@@ -440,7 +440,7 @@ export default function Main() {
         <section className="product-tiles">
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/WMN01.png" alt="product01" />
               </div>
 
@@ -457,7 +457,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -472,7 +472,7 @@ export default function Main() {
 
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/WMN02.png" alt="product01" />
               </div>
 
@@ -489,7 +489,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -504,7 +504,7 @@ export default function Main() {
 
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/WMN03.png" alt="product01" />
               </div>
 
@@ -521,7 +521,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
@@ -536,7 +536,7 @@ export default function Main() {
 
           <article className="product-tile">
             <header className="product-tile-header">
-              <div className="produtct-tile-image">
+              <div className="product-tile-image">
                 <img src="/images/products/WMN04.png" alt="product01" />
               </div>
 
@@ -553,7 +553,7 @@ export default function Main() {
               <div className="product-tile-headings">
                 <h1>
                   <a href="" title="Monochrome">
-                    <span>Monochrome</span>
+                    Monochrome
                   </a>
                 </h1>
               </div>
