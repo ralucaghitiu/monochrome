@@ -6,25 +6,45 @@ export default function Header() {
           <div className="header-connect d-none d-lg-block mt-3">
             <ul>
               <li>
-                <a href="" title="YouTube">
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="YouTube"
+                >
                   <i className="fa-brands fa-youtube"></i>
                 </a>
               </li>
 
               <li>
-                <a href="" title="Twitter">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Twitter"
+                >
                   <i className="fa-brands fa-twitter"></i>
                 </a>
               </li>
 
               <li>
-                <a href="" title="Facebook">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Facebook"
+                >
                   <i className="fa-brands fa-facebook"></i>
                 </a>
               </li>
 
               <li>
-                <a href="" title="Instagram">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Instagram"
+                >
                   <i className="fa-brands fa-instagram"></i>
                 </a>
               </li>
@@ -37,20 +57,24 @@ export default function Header() {
             </ul>
           </div>
 
-          <div className="title d-block d-lg-none mt-4 mb-3">
+          <div className="header-title d-block d-lg-none mt-4 mb-3">
             <h1>Monochrome</h1>
           </div>
 
           <div className="header-site-controls mt-3">
             <ul>
               <li>
-                <form className="d-none d-lg-block" action="/">
-                  <button type="submit" title="Search" className="searchsubmit">
+                <form
+                  className=" header-site-controls d-none d-lg-block"
+                  action="/"
+                >
+                  <button type="submit" title="Search" className="search">
                     <i className="fa-solid fa-magnifying-glass"></i>
                   </button>
                   <input
                     type="text"
                     placeholder="search"
+                    name="search"
                     title="search"
                     id="search"
                   ></input>
@@ -82,10 +106,9 @@ export default function Header() {
       <section className="header-primary">
         <div className="header-primary-menu container">
           <section className="header-primary-mobile d-lg-none">
-            <div className="menu-bars">
-              <a href="" title="Menu">
-                <i className="fa-solid fa-bars"></i>
-              </a>
+            <div className="header-primary-menu-bars">
+              <a href="" title="Menu"></a>
+              <i className="fa-solid fa-bars"></i>
             </div>
 
             <form action="" className="header-primary-search">
@@ -103,7 +126,7 @@ export default function Header() {
           </section>
 
           <nav className="nav-primary container d-none d-lg-block">
-            <ul className="d-flex justify-content-between">
+            <ul className="d-flex flex-row justify-content-between">
               <li>
                 <a href="" title="New Arrivals">
                   New Arrivals

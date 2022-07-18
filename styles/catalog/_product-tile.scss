@@ -1,5 +1,6 @@
 .product-tile {
   text-align: center;
+
   &-header {
     position: relative;
     margin-top: 10px;
@@ -18,6 +19,7 @@
       }
     }
   }
+
   &-image {
     display: block;
     img {
@@ -30,34 +32,18 @@
     top: 20px;
     right: 20px;
   }
-  &-headings {
-    margin-top: 30px;
-    h1 {
-      font-size: 24px;
-      font-weight: 300px;
-      margin-bottom: 0;
-      span:nth-of-type(1) {
-        color: $black;
-        font-weight: 500;
-      }
-      :nth-child(2) {
-        font-weight: 500;
-      }
-    }
-  }
+
   &-pricing {
-    font-weight: 300;
-    .product-price-regular {
-      display: block;
-      line-height: 29px;
-      font-size: 18px;
-    }
-    span {
-      color: $brand-primary;
-      font-weight: 500;
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 10px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 22px;
     }
   }
 }
+
 .demo-flex {
   .product-tiles {
     display: flex;

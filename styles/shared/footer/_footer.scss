@@ -10,7 +10,7 @@
     font-size: 22px;
     color: $brand-primary;
     font-family: 'Playfair Display';
-    font-weight: 500px;
+    font-weight: 500;
   }
 
   &-inner {
@@ -24,22 +24,52 @@
       line-height: 30px;
     }
 
+    h1 {
+      font-family: 'Playfair Display';
+      font-size: 22px;
+      font-weight: 500;
+    }
+
     .footer-connect {
       text-align: center;
 
       label {
         font-size: 15px;
-      }
-    }
-
-    form {
-      #email {
-        font-size: 12px;
-        width: 60%;
 
         @include media-breakpoint-up(lg) {
-          display: inline-block;
-          width: 100%;
+          font-size: 22px;
+        }
+      }
+
+      form {
+        #email {
+          font-size: 12px;
+          width: 70%;
+          padding: 0px 12px;
+
+          @include media-breakpoint-up(lg) {
+            display: inline-block;
+            width: 100%;
+            margin: 0px;
+          }
+        }
+
+        .button-submit {
+          text-transform: uppercase;
+          font-size: 12px;
+          margin: auto 160px;
+          border: 1px solid $brand-primary;
+          color: $brand-primary;
+          background-color: transparent;
+
+          @include media-breakpoint-up(lg) {
+            margin: 0px;
+            padding: 0 8px;
+            width: 30%;
+            font-family: 'Roboto';
+            align-self: flex-start;
+            height: 30px;
+          }
         }
       }
 
@@ -68,6 +98,10 @@
       @include media-breakpoint-up(lg) {
         background-color: $brand-secondary;
         color: $brand-primary;
+      }
+
+      p > a {
+        font-size: 14px;
       }
 
       &-list {

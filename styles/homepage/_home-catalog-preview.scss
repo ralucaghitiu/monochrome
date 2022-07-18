@@ -1,57 +1,59 @@
 .home-catalog-preview {
   font-family: 'PlayFair Display';
 
-  .product-tile {
-    @include media-breakpoint-up(lg) {
-      width: 23.6%;
-    }
-  }
-
   & > header h1 {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-weight: 700;
+    padding-top: 15px;
     font-size: 18px;
+    border-top: 1px solid $brand-secondary;
 
     @include media-breakpoint-up(lg) {
       font-size: 35px;
     }
   }
+
   @include media-breakpoint-up(lg) {
     margin: 24px auto;
   }
-  &:nth-last-child(2) header h1 {
+
+  &:nth-last-child(2) > header h1 {
     text-transform: uppercase;
   }
-  &:last-child header h1 {
+  &:last-child > header h1 {
     text-transform: uppercase;
   }
+
   & > footer {
     text-align: center;
     font-size: 22px;
     margin: 60px auto;
-  }
-  .catalog-preview-cta {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 23px;
-    display: inline-flex;
-    align-items: center;
-    gap: 16px;
-    &::after,
-    &::before {
-      content: '';
-      width: 25px;
-      height: 1px;
-      display: inline-block;
-      background-color: $brand-primary;
-      transition: width 0.6s ease-in;
-    }
-    &:hover {
-      &::before,
-      &::after {
-        width: 125px;
+    font-family: 'Roboto';
+
+    a {
+      border: 1px solid $brand-primary;
+      color: $brand-primary;
+      transition: color 0.2s linear, background-color 0.2s linear;
+
+      &:hover {
+        color: $brand-secondary;
+        background-color: brand-primary;
       }
     }
+  }
+
+  &:last-child > footer a {
+    font-size: 12px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 22px;
+      border: none;
+    }
+  }
+}
+
+.product-tile {
+  @include media-breakpoint-up(lg) {
+    width: 23.6%;
   }
 }

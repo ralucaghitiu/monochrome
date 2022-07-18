@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer pt-lg-2">
       <div className="footer-inner container">
         <section className="footer-contact d-none d-lg-block">
           <ul className="mt-3">
@@ -96,7 +96,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <p className="terms&conditions d-flex flex-column align-items-center text-decoration-underline d-lg-none">
+          <p className="terms&conditions mt-4 mb-4 d-flex flex-column align-items-center text-decoration-underline d-lg-none">
             <a
               href="http://"
               target="_blank"
@@ -120,64 +120,100 @@ export default function Footer() {
 
         <section className="footer-connect">
           <section className="footer-newsletter">
-            <h1 className="d-block d-lg-none">Let s connect</h1>
-            <p className="d-block d-lg-none">
+            <h1 className="d-block d-lg-none my-3">Let s connect</h1>
+            <label htmlFor="email" className="d-lg-none mb-2">
               Be the first to receive exclusives offers
-            </p>
-          </section>
-
-          <form action="" className="footer-newsletter">
-            <label htmlFor="email" className="d-none d-lg-block mb-2 mt-3">
+            </label>
+            <label htmlFor="email" className="d-none d-lg-block">
               sign up for newsletter
             </label>
-            <input
-              type="text"
-              placeholder="Email"
-              id="email"
-              name="email"
-              required
-            />
-            <button type="submit" className="button button-submit">
-              Submit
-            </button>
-            <p className="d-block d-lg-none">
-              I agree with{' '}
-              <a
-                href=""
-                title="Privacy Policy"
-                className="text-decoration-underline"
+            <form
+              action=""
+              className="d-flex flex-column align-items-center gap-4 gap-lg-2"
+            >
+              <input
+                className="d-lg-none"
+                type="email"
+                placeholder="Email"
+                id="email"
+                name="email"
+              />
+              <input
+                className="d-none d-lg-block"
+                type="email"
+                placeholder=""
+                id="email"
+                name="email"
+              />
+              <button
+                className="button-submit"
+                type="submit"
+                title="submit"
+                name="submit"
               >
-                Privacy Policy
+                Submit
+              </button>
+            </form>
+
+            <p className="d-lg-none mt-4 mb-2">
+              I agree with &nbsp;
+              <a
+                className="text-decoration-underline"
+                href="https://"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Privacy Policy"
+              >
+                Privacy policy
               </a>
-              {''}
-              and I want to receive emails from Monochorme
+              &nbsp; and I want to receive emails from Monochrome
             </p>
-          </form>
+          </section>
 
           <section className="footer-social">
             <h1 className="d-block d-lg-none">We are highly likeable</h1>
 
-            <ul className="mt-3 mt-lg-0">
+            <ul className="mb-3 my-lg-4">
               <li>
-                <a href="" title="Youtube">
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Youtube"
+                >
                   <i className="fa-brands fa-youtube"></i>
                 </a>
               </li>
 
               <li>
-                <a href="" title="Twitter">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Twitter"
+                >
                   <i className="fa-brands fa-twitter"></i>
                 </a>
               </li>
 
               <li>
-                <a href="" title="Facebook">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Facebook"
+                >
                   <i className="fa-brands fa-facebook"></i>
                 </a>
               </li>
 
               <li>
-                <a href="" title="Instagram">
+                <a
+                  href="https://istagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Instagram"
+                >
                   <i className="fa-brands fa-instagram"></i>
                 </a>
               </li>

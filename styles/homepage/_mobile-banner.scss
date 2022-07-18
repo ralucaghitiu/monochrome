@@ -11,8 +11,11 @@
 
     .button-new-in {
       position: absolute;
-      bottom: 32px;
+      bottom: 30px;
       right: 18px;
+      text-transform: uppercase;
+      font-family: 'Roboto';
+      font-size: 10px;
     }
   }
 }
