@@ -86,6 +86,9 @@
 
         li {
           font-size: 22px;
+          &:hover {
+            color: $gray-secondary;
+          }
         }
       }
     }
