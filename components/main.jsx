@@ -823,7 +823,7 @@ export default function Main() {
         </section>
         <footer>
           <a href="" title="View all" className="catalog-preview-cta">
-            View all
+            View all items
           </a>
         </footer>
       </section>
